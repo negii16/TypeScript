@@ -17,15 +17,25 @@ getUserSummary('Anjali', 21);
 // };
 
 // interface
-interface User {
-    name: string;
-    age: number;
-    email?: string; 
-    // optional
+interface Product{
+    title: string,
+    price: number,
+    inStock: boolean,
+    discount?: number
 }
 
-const user: User={
-    name: 'Anjali',
-    age: 22
+const laptop: Product ={
+    title: 'dell latitude',
+    price: 120000,
+    inStock: true
 
-};
+}
+// interfaces in Function
+interface User {
+  name: string;
+  age: number;
+}
+
+function printUser(user: User): string {
+  return `${user.name} is ${user.age} years old`;
+}
