@@ -39,3 +39,14 @@ interface User {
 function printUser(user: User): string {
   return `${user.name} is ${user.age} years old`;
 }
+
+
+// Typing React Props 
+interface ButtonProps{
+  title: string;
+  onClick: ()=> void;
+}
+
+export default function Button ({title, onClick}:ButtonProps){
+  return <button onClick={onClick}> {title } </button>
+}
