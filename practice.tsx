@@ -1,3 +1,4 @@
+
 let fullName: string = "Anjali Negi";
 let age: number = 21;
 let isPremiumUser: boolean = true;
@@ -48,5 +49,7 @@ interface ButtonProps{
 }
 
 export default function Button ({title, onClick}:ButtonProps){
-  return <button onClick={onClick}> {title } </button>
+  // return <Button onClick={onClick}> {title } </Button>
+
 }
+
