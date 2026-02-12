@@ -48,8 +48,5 @@ interface ButtonProps{
   onClick: ()=> void;
 }
 
-export default function Button ({title, onClick}:ButtonProps){
-  // return <Button onClick={onClick}> {title } </Button>
 
-}
 
